@@ -16,8 +16,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db)=>{
     console.log("Connected to Mongodb server");
     //Createing Collection = table and insert an record=document
    
-    /*  db.collection('Todos').insertOne({
-            text:"Something to do",
+      db.collection('Todos').insertOne({
+            text:"sud1",
             completed:false
         },(err,result)=>{
         if(err){
@@ -26,7 +26,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db)=>{
         //Object(key-value pair),Callback
         console.log(JSON.stringify(result.ops,undefined,2));
         });
-    */
+    
 //Insert a new doc into Users (name,age,location)
         /*
         db.collection('Users').insertOne({
